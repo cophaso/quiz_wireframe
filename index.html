@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cat Facts Quiz App</title>
+    <meta name="description" content="A quiz that tests your knowledge of cats">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+    <div class="col-4">
+      <a href="index.html">
+      <img class="logo" src="logo.jpg" alt="Quiz Logo"/>
+      </a>
+    </div>
+    <div class="col-8">
+      <span>Quiz: <span class="question-number">0</span>/10</span>
+      <span>Score: <span class="current-score">0</span></span>
+    </div>
+    </header>
+    <main role="main">
+      <div class="start-page">
+        <h1>Cat Facts Quiz App</h1>
+        <button type="button" class="start-button">Start Right Meow!</button>
+      </div>
+      <div class="quiz-form">
+      <!-- Question Page -->
+        <div class="question-1">
+          <h2>Question</h2>
+          <form>
+            <fieldset>
+              <label class="answer choice-1">
+                <input type="radio" value="Kindle" name="answer" required>
+                <span>Answer 1</span>
+              </label>
+              <label class="answer choice-2">
+                <input type="radio" value="Kaboodle" name="answer" required>
+                <span>Answer 2</span>
+              </label>
+              <label class="answer choice-3">
+                <input type="radio" value="Karat" name="answer" required>
+                <span>Answer 3</span>
+              </label>
+              <label class="answer choice-4">
+                <input type="radio" value="Keel" name="answer" required>
+                <span>Answer 4</span>
+              </label>
+              <button type="submit" class="submit-button">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      <!-- Feedback Pages -->
+        <section class="feedback-page">
+          <h2>Correct Message</h2>
+          <img src="correct_image.jpg" alt="image description">
+          <button class="next-button">Next</button>
+        </section>
+        <section class="feedback-page">
+          <h2>Incorrect Message</h2>
+          <img src="wrong_image.jpg" alt="image description">
+          <button class="next-button">Next</button>
+        </section>
+      <!-- Results Page -->
+        <section class="final-page">
+          <h2>Final Score: # out of 10</h2>
+          <button class="restart-button">Play Again</button>
+        </section>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
